@@ -18,7 +18,8 @@ import AboutPage from './pages/AboutPage'
 import CategoriesPage from './pages/CategoriesPage'
 
 
-const routes = createBrowserRouter([
+const router = createBrowserRouter(
+[
   {
     path: "/",
     element: <Login />,
@@ -71,12 +72,16 @@ const routes = createBrowserRouter([
       },
     ],
   }
-]);
+],
+{
+  basename: "/store",
+}
+);
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
      <Provider store={store}>
-      <RouterProvider router={routes} />
+      <RouterProvider router={router} />
     </Provider>
   </StrictMode>,
 )

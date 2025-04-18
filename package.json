@@ -2,6 +2,7 @@
   "name": "online-shopping",
   "private": true,
   "version": "0.0.0",
+  "homepage" : "https://Batoul7.github.io/store/",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",

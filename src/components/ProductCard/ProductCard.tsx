@@ -49,7 +49,7 @@ const ProductCard: React.FC<ProductProps> = ({ product }) => {
       </div>
    
       <div className="text-blue-500 py-2 flex items-center justify-center gap-3 border-t border-gray-200 text-xl">
-        <Link to={`/product/${product.id}`} className="hover:scale-110 transition-all duration-300">
+        <Link to={`/home/product/${product.id}`} className="hover:scale-110 transition-all duration-300">
           <FontAwesomeIcon icon={faEye} />
         </Link>
         <button className="cursor-pointer hover:scale-110 transition-all duration-300" onClick={handleAddToCart}>
